@@ -1,4 +1,4 @@
-import '../styles/Portfolio.css'
+import '../../styles/Portfolio.css'
 
 export default function Portfolio() {
     return (
@@ -67,7 +67,38 @@ export default function Portfolio() {
                            className="cta">View Project/Code</a>
                     </div>
                 </div>
+
+                <PortfolioCard delayOne={'1800'} language={'Python'} title={'Special Operations'} description={'Culminating project as a part of the Galvanize Data Analytics Immersive'} delayTwo={'1500'} repoLink={'https://github.com/JaimeVRodriguez/sof_selection_analysis'} image={'images/dai_mock.png'}/>
             </div>
         </section>
+    )
+}
+
+
+interface PortfolioCardProps {
+    delayOne: string;
+    language: string;
+    title: string;
+    description: string;
+    delayTwo: string;
+    repoLink: string;
+    image: any;
+}
+
+function PortfolioCard({delayOne,language, title, description, delayTwo, repoLink, image}: PortfolioCardProps) {
+    return (
+        <div className="portfolio-item">
+            <div className="portfolio-description has-margin-right" data-aos="fade-right"
+                 data-aos-delay={delayOne}>
+                <h6>{language}</h6>
+                <h1>{title}</h1>
+                <p>{description}</p>
+                <a href={repoLink} className="cta">View
+                    Code</a>
+            </div>
+            <div className="portfolio-img" data-aos="fade-left" data-aos-delay={delayTwo}>
+                <img src={image} alt={title}/>
+            </div>
+        </div>
     )
 }
