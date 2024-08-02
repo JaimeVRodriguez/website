@@ -2,7 +2,7 @@ import React from 'react';
 import Header from "../components/Header";
 import About from "../components/About";
 import Skills from "../components/skills/Skills";
-import Portfolio from "../components/Portfolio";
+import Portfolio from "../components/portfolio/Portfolio";
 
 export default function MainLayout() {
     return (
