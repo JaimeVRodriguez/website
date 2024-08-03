@@ -3,7 +3,7 @@ interface PortfolioCardProps {
     image: string;
     description: string;
     projectLink?: string;
-    repoLink: string;
+    repoLink?: string;
     language: string;
 }
 
@@ -18,7 +18,7 @@ export default function ProjectCard({title, image, description, projectLink, rep
                     <p>{description}</p>
                     <div className="project-links">
                         {projectLink && <a href={projectLink} className="cta">View Project</a>}
-                        <a href={repoLink} className="cta">View Code</a>
+                        {repoLink && <a href={repoLink} className="cta">View Code</a>}
                     </div>
                 </div>
             </div>

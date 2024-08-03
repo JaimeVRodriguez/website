@@ -3,6 +3,6 @@ export type Project = {
     image: string;
     description: string;
     projectLink?: string;
-    repoLink: string;
+    repoLink?: string;
     language: string
 }
