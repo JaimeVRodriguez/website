@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import Navigation from "./Navigation";
+import React, {useState} from 'react';
+import Navigation from './Navigation';
 import '../styles/Header.css'
 
 export default function Header() {
@@ -20,16 +20,16 @@ export default function Header() {
     return (
         <header>
             <div className={`menu-toggler ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
-                <div className="bar half start"></div>
-                <div className="bar"></div>
-                <div className="bar half end"></div>
+                <div className='bar half start'></div>
+                <div className='bar'></div>
+                <div className='bar half end'></div>
             </div>
 
             <nav className={`top-nav ${isMenuOpen ? 'open' : ''}`}>
                 <Navigation onNavClick={handleNavClick}/>
             </nav>
 
-            <div className="landing-text">
+            <div className='landing-text'>
                 <h1>Jaime V. Rodriguez</h1>
                 <h6>Software Developer | Innovator | Veteran</h6>
             </div>

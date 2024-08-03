@@ -1,0 +1,57 @@
+.contact {
+    background-color: #f8f8f8;
+    padding: 6rem 0;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.contact-img, .contact-details {
+    flex-basis: 48%;
+}
+
+.contact-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.contact-details p {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    color: #666;
+}
+
+.contact-media, .social-links {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.icon-link, .social-links a {
+    font-size: 3rem;
+    color: #3d3d3f;
+    transition: color 0.3s ease;
+}
+
+.icon-link:hover, .social-links a:hover {
+    color: #c1a57b;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .contact-img, .contact-details {
+        flex-basis: 100%;
+    }
+
+    .contact-img {
+        margin-bottom: 2rem;
+    }
+}
