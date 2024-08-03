@@ -1,5 +1,5 @@
-import {IconType} from "react-icons";
-import React from "react";
+import {IconType} from 'react-icons';
+import React from 'react';
 
 interface SkillCardProps {
     icon: IconType;
@@ -9,10 +9,10 @@ interface SkillCardProps {
 }
 
 export default function SkillCard({icon: Icon, title, description, delay}: SkillCardProps) {
-    return(
+    return (
         <div className={'skill'} data-aos={'fade-in'} data-aos-delay={delay}>
             <div className={'icon-container'}>
-                <Icon />
+                <Icon/>
             </div>
             <h1>{title}</h1>
             <p>{description}</p>
