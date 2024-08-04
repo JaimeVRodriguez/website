@@ -4,6 +4,7 @@ import About from '../components/About';
 import Skills from '../components/skills/Skills';
 import Portfolio from '../components/portfolio/Portfolio';
 import Experience from '../components/experience/Experience';
+import Contact from '../components/Contact';
 
 export default function MainLayout() {
     return (
@@ -16,6 +17,7 @@ export default function MainLayout() {
                 <Skills/>
                 <Portfolio/>
                 <Experience/>
+                <Contact/>
             </main>
             {/*<Footer />*/}
         </div>
